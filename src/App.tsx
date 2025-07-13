@@ -1,18 +1,19 @@
-import { BrowserRouter, Route, Routes } from "react-router";
-import "./App.css";
+import {  Route, Routes } from "react-router";
 import { Header } from "./components/header/view/header.view";
-import { Home } from "./pages/home/home";
-
+import { Home, UseAsiPred, HowToUse, AboutUs, HowToCite } from "./pages";
+import "./App.css";
 
 function App() {
   return (
     <>
       <Header />
-      <BrowserRouter>
-        <Routes>
-          <Route index element={<Home />} />
-        </Routes>
-      </BrowserRouter>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="use-asi-pred" element={<UseAsiPred />} />
+        <Route path="how-to-use" element={<HowToUse />} />
+        <Route path="about-us" element={<AboutUs />} />
+        <Route path="how-to-cite" element={<HowToCite />} />
+      </Routes>
     </>
   );
 }
