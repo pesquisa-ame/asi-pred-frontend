@@ -1,0 +1,19 @@
+button {
+    background-color: #FFF;
+    color: #1F233E;
+    font-weight: 800;
+    height: 6.5vh;
+    font-size: 16px;
+    border-width: 1px;
+    border-radius: 6px;
+    padding: 5px;
+    margin: 12px;
+    box-shadow: 2px 2px 5px rgb(242 247 255 / 0.4);
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+   
+}
