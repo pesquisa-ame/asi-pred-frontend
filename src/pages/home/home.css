@@ -12,6 +12,6 @@ p {
 }
 
 a {
-  color: #1f233e;
+  color: var(--color-asi-blue);
   padding: 5px;
 }

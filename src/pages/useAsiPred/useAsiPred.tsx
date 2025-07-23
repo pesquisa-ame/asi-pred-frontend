@@ -1,7 +1,11 @@
+import { Input } from "../../components/input/view/input.view";
+import './useAsiPred.css';
+
 export const UseAsiPred = () => {
     return (
-        <section>
-            use asi pred
-        </section>
+        <div className="use-asi-pred-page">
+            <Input handleInputChange={() => {}}/>
+
+        </div>
     )
 }

@@ -1,5 +1,5 @@
 body {
     border: 0;
-    color: #1F233E;
+    color: var(--color-asi-blue);
     font-size: 18px;
 }

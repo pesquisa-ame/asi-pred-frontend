@@ -1,5 +1,5 @@
 .header-section {
-    background-color: #1F233E;
+    background-color: var(--color-asi-blue);
     color: #FFF;
     display: flex;
     align-items: center;

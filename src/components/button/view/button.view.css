@@ -1,6 +1,6 @@
 button {
     background-color: #FFF;
-    color: #1F233E;
+    color: var(--color-asi-blue);
     font-weight: 800;
     height: 6.5vh;
     font-size: 16px;
