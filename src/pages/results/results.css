@@ -1,0 +1,79 @@
+.results-page {
+    .id {
+        font-weight: bolder;
+        margin-top: 2rem;
+        font-size: 1.55rem;
+    }
+
+    .aminoacid-identification {
+        font-size: 1.25rem;
+
+        svg {
+            position: relative;
+            top: 5px;
+            margin: 2px;
+        }
+    }
+
+    .image-grid-container {
+        display:  grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center; 
+
+        p {
+            margin: 0;
+        }
+
+    }
+
+    .hca-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        #cluster-image {
+            margin: 0;
+            width: auto;
+            height: 90vh;
+        }
+
+        a {
+            margin: 0;
+        }
+        
+        button {
+        background-color: var(--color-asi-blue);
+        width: 15vw;
+        color: #FFF;
+        height: 8vh;
+        margin: 0;
+        margin: 2rem 0;
+
+            &.active {
+                background-color: #FFF;
+                color: var(--color-asi-blue);
+            }
+
+            &:hover {
+                background-color: #FFF;
+                color: var(--color-asi-blue);
+            }
+        }
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            background-color: var(--color-asi-blue);
+            width: 15vw;
+            height: 7vh;
+            color: #FFF;
+            text-decoration: none; 
+            margin: 2rem 0;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+    }
+}

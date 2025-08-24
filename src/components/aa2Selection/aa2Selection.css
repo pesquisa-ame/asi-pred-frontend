@@ -16,6 +16,7 @@
         grid-template-columns: repeat(5, 1fr);
         gap: 0.25rem;
 
+    
         button {
         background-color: var(--color-asi-blue);
         width: 10vw;

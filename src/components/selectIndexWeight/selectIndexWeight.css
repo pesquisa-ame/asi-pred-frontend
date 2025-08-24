@@ -1,0 +1,16 @@
+.index-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  width: 100%;
+  align-items: center;       
+  justify-items: center;     
+  margin-top: 2rem;
+}
+
+.weight-selector-section {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(5, 1fr);
+  white-space: nowrap;
+}

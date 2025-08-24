@@ -1,0 +1,35 @@
+.button-section {
+    margin: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    button {
+        background-color: var(--color-asi-blue);
+        width: 15vw;
+        font-size: 1.15rem;
+        color: #FFF;
+        height: 8vh;
+        margin: 0.75rem;
+
+            &.active {
+                background-color: #FFF;
+                color: var(--color-asi-blue);
+            }
+
+            &:hover {
+                background-color: #FFF;
+                color: var(--color-asi-blue);
+            }
+    }
+
+    input[type="checkbox"] {
+        transform: scale(1.25);
+        width: fit-content;
+        margin: 5px;
+        cursor: pointer; 
+    }
+    label {
+        font-weight: 200;
+    }
+}
