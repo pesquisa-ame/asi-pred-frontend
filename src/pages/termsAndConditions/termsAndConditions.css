@@ -1,0 +1,12 @@
+.terms-and-conditions-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 4rem;
+
+    p {
+        text-align: justify;
+    }
+}

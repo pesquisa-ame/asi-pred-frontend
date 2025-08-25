@@ -1,0 +1,10 @@
+.how-to-use-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: auto;
+        height: 220vh;
+    }
+}

@@ -174,7 +174,12 @@ export const UseAsiPred = () => {
               >
                 Submit
               </button>
+                <a 
+                  href="terms-and-conditions"
+                  aria-label="Link to terms and conditions page."
+                >Terms and Conditions</a>
             </div>
+
             </>
           )}
           

@@ -3,6 +3,7 @@ import { Header } from "./components/header/view/header.view";
 import { Home, UseAsiPred, HowToUse, AboutUs, HowToCite } from "./pages";
 import "./App.css";
 import Results from "./pages/results/results";
+import TermsAndConditions from "./pages/termsAndConditions/termsAndconditions";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="about-us" element={<AboutUs />} />
         <Route path="how-to-cite" element={<HowToCite />} />
         <Route path="results" element={<Results />} />
+        <Route path="terms-and-conditions" element={<TermsAndConditions />} />
       </Routes>
     </>
   );
