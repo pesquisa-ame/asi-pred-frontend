@@ -1,9 +1,15 @@
-import {  Route, Routes } from "react-router";
+import { Route, Routes } from "react-router";
 import { Header } from "./components/header/view/header.view";
-import { Home, UseAsiPred, HowToUse, AboutUs, HowToCite } from "./pages";
+import {
+  Home,
+  UseAsiPred,
+  HowToUse,
+  AboutUs,
+  HowToCite,
+  TermsAndConditions,
+  Results,
+} from "./pages";
 import "./App.css";
-import Results from "./pages/results/results";
-import TermsAndConditions from "./pages/termsAndConditions/termsAndconditions";
 
 function App() {
   return (

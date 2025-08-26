@@ -1,12 +1,10 @@
-import './termsAndConditions.css';
+import "./termsAndConditions.css";
 
-export default function TermsAndConditions() {
+export const TermsAndConditions = () => {
   return (
     <div>
       <section className="terms-and-conditions-section">
-        <h1>
-          ASI-PRED Terms and Conditions
-        </h1>
+        <h1>ASI-PRED Terms and Conditions</h1>
         <div>
           <p>
             Welcome to ASI-PRED. By using our online tool, you agree with the
@@ -44,4 +42,4 @@ export default function TermsAndConditions() {
       </section>
     </div>
   );
-}
+};

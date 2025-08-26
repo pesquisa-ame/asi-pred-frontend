@@ -15,7 +15,7 @@ import { invertPercentages } from "./controller/invertPercentages";
 import { getDistanceValue } from "./controller/getDistanceValue";
 import { getDistanceValueOrder } from "./controller/getDistanceValueOrder";
 import HydrophobicityDifference from "../../components/hydrophobicityDifference/hydrophobicituDifference";
-import './results.css';
+import "./results.css";
 
 export type Distances = {
   [key: string]: {
@@ -25,7 +25,7 @@ export type Distances = {
 
 export type CombinationType = [string, string, string, string];
 
-function Results() {
+export const Results = () => {
   const location = useLocation();
 
   const [imageSrc, setImageSrc] = useState<string | null>(null);
@@ -54,7 +54,7 @@ function Results() {
 
   const [data, setData] = useState<{
     id: string[];
-    combinacoes: (string | JSX.Element)[];
+    combinacoes: (string | React.ReactNode)[];
     grantham: number[];
     sneath: number[];
     miyata: number[];
@@ -74,7 +74,7 @@ function Results() {
 
   const [results, setResults] = useState<{
     id: string[];
-    combinacoes: (string | JSX.Element)[];
+    combinacoes: (string | React.ReactNode)[];
     grantham: number[];
     sneath: number[];
     miyata: number[];
@@ -311,23 +311,23 @@ function Results() {
               )}
             </div>
             <p>Index based on Grantham's Score : {printResults[4][index]}</p>
-              <GradientBar value={Number(printResults[4][index])} />
+            <GradientBar value={Number(printResults[4][index])} />
             <p>Index based on Sneath's index: {printResults[5][index]}</p>
-              <GradientBar value={Number(printResults[5][index])} />
+            <GradientBar value={Number(printResults[5][index])} />
             <p>Index based on Miyata: {printResults[6][index]}</p>
-              <GradientBar value={Number(printResults[6][index])} />
+            <GradientBar value={Number(printResults[6][index])} />
             <p>
               Index based on Epstein's coefficient of difference:{" "}
               {printResults[7][index]}
             </p>
-              <GradientBar value={Number(printResults[7][index])} />
+            <GradientBar value={Number(printResults[7][index])} />
             <p>
               Index based on Experimental Exchangeability data:{" "}
               {printResults[8][index]}
             </p>
-              <GradientBar value={Number(printResults[8][index])} />
+            <GradientBar value={Number(printResults[8][index])} />
             <p>Average Result: {printResults[9][index]}</p>
-              <GradientBar value={Number(printResults[9][index])} />
+            <GradientBar value={Number(printResults[9][index])} />
             <p>
               <HydrophobicityDifference
                 aa1={String(printResults[1][index])}
@@ -339,21 +339,14 @@ function Results() {
       </div>
 
       <div className="hca-section">
-        <button
-          onClick={fetchClusterImage}
-          disabled={loading}
-        >
+        <button onClick={fetchClusterImage} disabled={loading}>
           {loading ? "Loading..." : "Generate Cluster Image"}
         </button>
         {error && <p style={{ color: "red" }}>{error}</p>}
 
         {imageSrc ? (
           <>
-            <img
-              id="cluster-image"
-              src={imageSrc}
-              alt="Cluster Dendrogram"
-            />
+            <img id="cluster-image" src={imageSrc} alt="Cluster Dendrogram" />
             <a
               href={imageSrc}
               download="cluster.png"
@@ -368,6 +361,6 @@ function Results() {
       </div>
     </div>
   );
-}
+};
 
 export default Results;
