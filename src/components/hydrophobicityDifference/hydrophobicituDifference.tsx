@@ -33,9 +33,13 @@ function HydrophobicityDifference({ aa1, aa2 }: hydrophobicityDifferenceProps) {
   const h1 = kdHydrophobicity[aa1 as keyof typeof kdHydrophobicity];
   const h2 = kdHydrophobicity[aa2 as keyof typeof kdHydrophobicity];
 
-  const diff = Math.abs(h1 - h2);
-  const maxHydro = Math.max(...Object.values(kdHydrophobicity));
-  const valuePercent = (diff / maxHydro) * 100;
+
+  const minHydro = Math.min(...Object.values(kdHydrophobicity)); 
+  const maxHydro = Math.max(...Object.values(kdHydrophobicity)); 
+  const maxDiff = maxHydro - minHydro; 
+  const diff = Math.abs(h2 - h1);
+  const valuePercent = (diff / maxDiff) * 100;
+
 
   return (
     <div>
