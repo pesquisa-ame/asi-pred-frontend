@@ -20,6 +20,11 @@
         grid-template-columns: 1fr 1fr;
         place-items: center; 
 
+        img {
+            width: auto;
+            height: 20vh;
+        }
+
         p {
             margin: 0;
         }
